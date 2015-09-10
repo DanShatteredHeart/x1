@@ -19,7 +19,7 @@ void setup() {
 //// NEXT FRAME:  scene, action, show.
 void draw() {
   //// SCENE:  sky, sun, tree, house, etc.
-  background( 100,150,200 );                // sky
+  background( 50,200,255 );                // sky
   fill( 255,255,0 );
   ellipse( width*3/4, height/8, 40,40 );    // sun
   // Grass
@@ -32,7 +32,7 @@ void draw() {
                                             // house
 
   fill(0);
-  text( "My name is Mud", 10,height-20 );                                          
+  text( "My name is Jeff", 10,height-20 );                                          
                                             
   //// ACTION:  move (x,y) coordinates.
   x=  x + dx;
@@ -41,8 +41,12 @@ void draw() {
   //// SHOW:  display the creature at (x,y)
 
   /* INSERT YOUR CODE HERE! */
-  fill(255,0,0); rect( x,y, 30,50 );        /* REPLACE THIS WITH YOUR OWN CODE! */
-  text( "Fred", x,y );
+  fill(255,255,0); 
+  rect( x,y, 30,50 );        /* REPLACE THIS WITH YOUR OWN CODE! */
+ fill(255,255,20);
+ ellipse(x+15,y-10,50,10);
+ fill(255,0,0);
+  text( "Vegeta", x+3,y+20 );
 
 }
 
