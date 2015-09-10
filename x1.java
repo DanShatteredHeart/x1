@@ -24,19 +24,23 @@ void draw() {
   ellipse( width*3/4, height/8, 50,50 );    // sun
   // Grass
   fill(200,150,100);
-  rect(125,horizon/1.3,30,80);
+  rect(125,horizon/1.5,30,100);
   fill( 100,200,100 );
-  rect( 0,horizon, width,height*3/4 );     // grass.
+  rect( 0,horizon, width,height*3/4 );      // grass.
   
   /* INSERT YOUR CODE HERE! */
-  triangle( 150,horizon/2, 120,horizon-20/2, 180,horizon-20/2  );
-  triangle( 150,horizon/2, 110,horizon-25, 190,horizon-25  );  // tree
+  triangle( 140,horizon/2, 100,horizon-20/2, 180,horizon-20/2  );
+  triangle( 140,horizon/2, 90,horizon-25, 180,horizon-25  );  // tree
  
   text( "This is NOT a good tree; please fix it!", 150,horizon );
-                                            // house
+stroke(255,255,0);
+noFill();
+ ellipse(x,y,120,130);
+ fill(255,255,255);
+ rect(90,250,150,90);                                           // house
 
   fill(0);
-  text( "My name is Jeff", 10,height-20 );                                          
+  text( "My name is Goku", 10,height-20 );                                          
                                             
   //// ACTION:  move (x,y) coordinates.
   x=  x + dx;
@@ -45,8 +49,9 @@ void draw() {
   //// SHOW:  display the creature at (x,y)
 
   /* INSERT YOUR CODE HERE! */
+  stroke(0,0,255);
   fill(255,255,0); 
-  rect( x,y, 30,50 );        /* REPLACE THIS WITH YOUR OWN CODE! */
+   rect( x,y, 30,50 );        /* REPLACE THIS WITH YOUR OWN CODE! */
  fill(255,255,20);
  ellipse(x+15,y-10,50,10);
  fill(255,0,0);
