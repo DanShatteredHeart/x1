@@ -37,8 +37,13 @@ stroke(255,255,0);
 noFill();
  ellipse(x,y,120,130);
  fill(255,255,255);
- rect(90,250,150,90);                                           // house
-
+rect(110,100,50/2,100);
+ fill(255,255,255);
+ arc(100,250,150,150,PI,TWO_PI); 
+fill(0,0,0); 
+arc(100,250,20,50,PI,TWO_PI);  
+fill(0);
+text("CAPSULE CORP.", 50,210);  // house
   fill(0);
   text( "My name is Goku", 10,height-20 );                                          
                                             
