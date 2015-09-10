@@ -20,9 +20,11 @@ void setup() {
 void draw() {
   //// SCENE:  sky, sun, tree, house, etc.
   background( 50,200,255 );                // sky
+  stroke(0);
   fill( 255,255,0 );
   ellipse( width*3/4, height/8, 50,50 );    // sun
   // Grass
+  stroke(0);
   fill(200,150,100);
   rect(125,horizon/1.5,30,100);
   fill( 100,200,100 );
@@ -36,8 +38,10 @@ void draw() {
 stroke(255,255,0);
 noFill();
  ellipse(x,y,120,130);
+ stroke(0);
  fill(255,255,255);
 rect(110,100,50/2,100);
+ 
  fill(255,255,255);
  arc(100,250,150,150,PI,TWO_PI); 
 fill(0,0,0); 
@@ -49,8 +53,10 @@ text("CAPSULE CORP.", 50,210);  // house
                                             
   //// ACTION:  move (x,y) coordinates.
   x=  x + dx;
+  if(x > width) dx=  -dx;
+  if(x< 0
   y=  y + dy;
-  
+ if( y>height-20) dy=   -dy; 
   //// SHOW:  display the creature at (x,y)
 
   /* INSERT YOUR CODE HERE! */
