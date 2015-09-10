@@ -21,13 +21,17 @@ void draw() {
   //// SCENE:  sky, sun, tree, house, etc.
   background( 50,200,255 );                // sky
   fill( 255,255,0 );
-  ellipse( width*3/4, height/8, 40,40 );    // sun
+  ellipse( width*3/4, height/8, 50,50 );    // sun
   // Grass
+  fill(200,150,100);
+  rect(125,horizon/1.3,30,80);
   fill( 100,200,100 );
   rect( 0,horizon, width,height*3/4 );      // grass.
   
   /* INSERT YOUR CODE HERE! */
-  triangle( 150,horizon, 120,horizon-50, 180,horizon-50  );  // tree
+  triangle( 150,horizon/2, 120,horizon-20/2, 180,horizon-20/2  );
+  triangle( 150,horizon/2, 110,horizon-25, 190,horizon-25  );  // tree
+ 
   text( "This is NOT a good tree; please fix it!", 150,horizon );
                                             // house
 
