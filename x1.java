@@ -40,10 +40,10 @@ noFill();
  ellipse(x,y,120,130);
  stroke(0);
   //not an iglo
- fill(255,255,255);
+ fill(255,255,155);
 rect(110,150,50/2,50);
 rect(60,150, 50/2,50);
- fill(255,255,255);
+ fill(255,255,155);
  arc(100,250,150,150,PI,TWO_PI); 
 fill(0,0,0); 
 arc(100,250,20,50,PI,TWO_PI);  
