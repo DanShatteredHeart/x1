@@ -39,9 +39,10 @@ stroke(255,255,0);
 noFill();
  ellipse(x,y,120,130);
  stroke(0);
+  //not an iglo
  fill(255,255,255);
-rect(110,100,50/2,100);
- //not an iglo
+rect(110,150,50/2,50);
+rect(60,150, 50/2,50);
  fill(255,255,255);
  arc(100,250,150,150,PI,TWO_PI); 
 fill(0,0,0); 
