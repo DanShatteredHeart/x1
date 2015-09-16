@@ -41,7 +41,7 @@ noFill();
  stroke(0);
  fill(255,255,255);
 rect(110,100,50/2,100);
- 
+ //not an iglo
  fill(255,255,255);
  arc(100,250,150,150,PI,TWO_PI); 
 fill(0,0,0); 
@@ -53,16 +53,17 @@ text("CAPSULE CORP.", 50,210);  // house
                                             
   //// ACTION:  move (x,y) coordinates.
   x=  x + dx;
-  if(x > width) dx=  -dx;
-  if(x< 0
+  
   y=  y + dy;
- if( y>height-20) dy=   -dy; 
+ 
   //// SHOW:  display the creature at (x,y)
 
   /* INSERT YOUR CODE HERE! */
   stroke(0,0,255);
-  fill(255,255,0); 
-   rect( x,y, 30,50 );        /* REPLACE THIS WITH YOUR OWN CODE! */
+  fill(0,0,255); 
+   rect( x,y, 30,50 ); 
+   fill(255,255,150);
+ rect(x,y, 30, 15 );  /* REPLACE THIS WITH YOUR OWN CODE! */
  fill(255,255,20);
  ellipse(x+15,y-10,50,10);
  fill(255,0,0);
